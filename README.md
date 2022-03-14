@@ -4,7 +4,7 @@
 
 ## Preview Pic
 
-![InstaReact]https://i.imgur.com/0C5ReQ0.png)
+![InstaReact](https://i.imgur.com/0C5ReQ0.png)
 
 # Getting Started with Create React App
 
