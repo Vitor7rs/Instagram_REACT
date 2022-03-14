@@ -2,6 +2,10 @@
 
 ## link site teste
 
+## Preview Pic
+
+![InstaReact](https://imgur.com/gallery/7bTIYWU)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
