@@ -7,5 +7,5 @@ export default function Usuario({user}){
                 {user.name}
             </div>
         </div>
-    )
+    );
 }

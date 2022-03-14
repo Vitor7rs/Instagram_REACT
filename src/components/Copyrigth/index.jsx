@@ -3,5 +3,5 @@ export default function Copyrigth(){
         <div class="copyright">
             © 2021 INSTAGRAM DO FACEBOOK
         </div>
-    )
+    );
 }
