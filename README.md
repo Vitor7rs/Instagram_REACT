@@ -4,7 +4,7 @@
 
 ## Preview Pic
 
-![InstaReact](https://tm.ibxk.com.br/2021/05/07/07031742837001.jpg?ims=1120x420)
+![InstaReact]https://i.imgur.com/0C5ReQ0.png)
 
 # Getting Started with Create React App
 
