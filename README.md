@@ -1,4 +1,4 @@
-# Instagram Clone, Render with React
+# Instagram Clone, rendered and built with react!
 
 ##link site teste
 
