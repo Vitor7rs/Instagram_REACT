@@ -1,104 +1,116 @@
 import NavBar from "./components/NavBar"
 import Stories from "./components/Stories"
 import Posts from "./components/Posts"
+import Usuario from "./components/Usuario"
+import Sugestoes from "./components/Sugestoes"
+import Links from "./components/links"
+import Copyrigth from "./components/Copyrigth"
 
 export default function App() {
+    
+    const user = {
+        nameId: "catanacomics",
+        name: "Catana",
+        img: "/assets/img/catanacomics.svg"
+    }
+
+    const stories = [
+        {
+            user:"9gag",
+            img: "assets/img/9gag.svg"
+        },
+        {
+            user: "meowed",
+            img: "assets/img/meowed.svg"
+        },
+        {
+            user: "barked",
+            img: "assets/img/barked.svg"
+        },
+        {
+            user: "nathanwpylestrangeplanet",
+            img: "assets/img/nathanwpylestrangeplanet.svg"
+        },
+        {
+            user: "wawawicomics",
+            img: "assets/img/wawawicomics.svg"
+        },
+        {
+            user: "respondeai",
+            img: "assets/img/respondeai.svg"
+        },
+        {
+            user: "filomoderna",
+            img: "assets/img/filomoderna.svg"
+        },
+        {
+            user: "memeriagourmet",
+            img: "assets/img/memeriagourmet.svg"
+        },
+    ];
+
+    const posts = [
+        {
+            userImg: "assets/img/meowed.svg",
+            user: "meowed",
+            postImg: "assets/img/gato-telefone.svg",
+            likesImg: "assets/img/respondeai.svg",
+            liked: "respondeai",
+            othersLikes: "101.523"
+        },
+        {
+            userImg: "assets/img/barked.svg",
+            user: "barked",
+            postImg: "assets/img/dog.svg",
+            likesImg: "assets/img/adorable_animals.svg",
+            liked: "adorable_animals",
+            othersLikes: "99.159"
+        }
+    ];
+
+    const sugestoes = [
+        {
+            userImg: "assets/img/bad.vibes.memes.svg",
+            user: "bad.vibes.memes",
+            userStatus: "Segue você"
+        },
+        {
+            userImg: "assets/img/chibirdart.svg",
+            user: "chibirdart",
+            userStatus: "Segue você"
+        },
+        {
+            userImg: "assets/img/razoesparaacreditar.svg",
+            user: "razoesparaacreditar",
+            userStatus: "Novo no Instagram"
+        },
+        {
+            userImg: "assets/img/adorable_animals.svg",
+            user: "adorable_animals",
+            userStatus: "Segue você"
+        },
+        {
+            userImg: "assets/img/smallcutecats.svg",
+            user: "smallcutecats",
+            userStatus: "Segue você"
+        }
+    ];
+
     return (
         <>
-           <NavBar />
+            <NavBar />
             <div class="corpo">
                 <div class="esquerda">
-                    <Stories />
-                    <Posts />
-                    
+                    <Stories stories={stories} />
+                    <Posts posts={posts} />
                 </div>
-
                 <div class="sidebar">
-                    <div class="usuario">
-                        <img src="assets/img/catanacomics.svg" />
-                        <div class="texto">
-                            <strong>catanacomics</strong>
-                            Catana
-                        </div>
-                    </div>
-
-                    <div class="sugestoes">
-                        <div class="titulo">
-                            Sugestões para você
-                            <div>Ver tudo</div>
-                        </div>
-
-                        <div class="sugestao">
-                            <div class="usuario">
-                                <img src="assets/img/bad.vibes.memes.svg" />
-                                <div class="texto">
-                                    <div class="nome">bad.vibes.memes</div>
-                                    <div class="razao">Segue você</div>
-                                </div>
-                            </div>
-
-                            <div class="seguir">Seguir</div>
-                        </div>
-
-                        <div class="sugestao">
-                            <div class="usuario">
-                                <img src="assets/img/chibirdart.svg" />
-                                <div class="texto">
-                                    <div class="nome">chibirdart</div>
-                                    <div class="razao">Segue você</div>
-                                </div>
-                            </div>
-
-                            <div class="seguir">Seguir</div>
-                        </div>
-
-                        <div class="sugestao">
-                            <div class="usuario">
-                                <img src="assets/img/razoesparaacreditar.svg" />
-                                <div class="texto">
-                                    <div class="nome">razoesparaacreditar</div>
-                                    <div class="razao">Novo no Instagram</div>
-                                </div>
-                            </div>
-
-                            <div class="seguir">Seguir</div>
-                        </div>
-
-                        <div class="sugestao">
-                            <div class="usuario">
-                                <img src="assets/img/adorable_animals.svg" />
-                                <div class="texto">
-                                    <div class="nome">adorable_animals</div>
-                                    <div class="razao">Segue você</div>
-                                </div>
-                            </div>
-
-                            <div class="seguir">Seguir</div>
-                        </div>
-
-                        <div class="sugestao">
-                            <div class="usuario">
-                                <img src="assets/img/smallcutecats.svg" />
-                                <div class="texto">
-                                    <div class="nome">smallcutecats</div>
-                                    <div class="razao">Segue você</div>
-                                </div>
-                            </div>
-
-                            <div class="seguir">Seguir</div>
-                        </div>
-                    </div>
-
-                    <div class="links">
-                        Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
-                    </div>
-
-                    <div class="copyright">
-                        © 2021 INSTAGRAM DO FACEBOOK
-                    </div>
+                    <Usuario user={user}/>
+                    <Sugestoes />
+                    <Links />
+                    <Copyrigth />
                 </div>
             </div>
-
             <div class="fundo-mobile">
                 <ion-icon name="home"></ion-icon>
                 <ion-icon name="search-outline"></ion-icon>
