@@ -89,8 +89,6 @@ body {
 
 .sidebar {
   width: 293px;
-  position: sticky;
-  top: 100px;
 }
 
 .stories {
